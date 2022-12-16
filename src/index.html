@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+        <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/main.js" type="module"></script>
+        <link href="./css/main.css" rel="stylesheet" >
+    </head>
+    <body>
+        <div class="selectors">
+            <!-- block size -->
+            <label for="blocksize" class="inputbtn">Block size<span id="blockvalue"></span><input value="16" type="input" min="2" max="50" id="blocksize"></label>
+            <!-- max height -->
+            <label for="maxheight" class="inputbtn">Max Height<input type="input" id="maxheight" placeholder="in px" value="128"></label>
+            <!-- max width -->
+            <label for="maxwidth" class="inputbtn">Max Width<input type="input" id="maxwidth" placeholder="in px"></label>
+            <div class="infoselects">
+                <!-- color palette example-->
+                <div class="colorpalette">
+                    <label class="btn small" for="paletteselector">Palette</label>
+                    <div name="paletteselector" id="paletteselector" tabindex="-1" aria-hidden="true"></select>
+                </div>
+                <div class="dothings">
+                    <!-- download image -->
+                    <button id="downloadimage" class="btn small call">Download Image</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="image-container">
+            <!-- <img src="./images/image_1.png"  id="input-img" alt="">
+            <canvas id="output-canvas"></canvas> -->
+        </div>
+        <button id="generate-btn">Generate</button>
+        <button id="pixelate-btn">Pixelate</button>
+    </body>
+</html>
+
